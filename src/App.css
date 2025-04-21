@@ -92,6 +92,108 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .app-wrapper {
+    flex-direction: column;
+  }
+
+  .app-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    overflow-y: visible;
+    z-index: auto;
+  }
+
+  .app-main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 1rem;
+  }
+
+  .content-container {
+    padding: 0;
+  }
+
+  .todo-container {
+    padding: 1rem;
+  }
+
+  .app-container {
+    gap: 1rem;
+  }
+
+  .primary-button {
+    padding: 0.6rem 1rem;
+  }
+
+  .timestamp {
+    font-size: 0.7rem;
+  }
+
+  .todo-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .stat-item {
+    text-align: left;
+  }
+
+  .stat-number {
+    font-size: 1.2rem;
+  }
+
+  .todo-input {
+    flex-direction: column;
+  }
+
+  .todo-input input {
+    width: 100%;
+  }
+
+  .todo-list {
+    gap: 0.5rem;
+  }
+
+  .timer-display {
+    font-size: 2rem;
+  }
+
+  .timer-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .timer-mode {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .modal-content {
+    max-width: 100%;
+  }
+
+  .section-tabs {
+    overflow-x: scroll;
+  }
+}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
